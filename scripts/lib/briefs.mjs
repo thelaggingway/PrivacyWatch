@@ -355,7 +355,7 @@ const HEADER = `<!-- HEADER -->
     </a>
     <div class="header-meta">
       <a href="/">All providers</a>
-      <a href="https://github.com/WyrdWerk/PrivacyWatch" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://github.com/thelaggingway/PrivacyWatch" target="_blank" rel="noopener">GitHub ↗</a>
       <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" title="Switch theme">
         <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 14.3A9 9 0 1 1 9.7 3 7 7 0 0 0 21 14.3z"/></svg>
         <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -632,7 +632,7 @@ ${HEADER}
 <footer>
   <div class="footer-inner">
     Maintained by <a href="https://wyrdwerk.com" target="_blank" rel="noopener">WyrdWerk</a> ·
-    <a href="https://github.com/WyrdWerk/PrivacyWatch" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://github.com/thelaggingway/PrivacyWatch" target="_blank" rel="noopener">GitHub</a> ·
     Not legal advice · Policies change — always verify with primary sources
   </div>
 </footer>

@@ -195,7 +195,7 @@
       <span class="logo-wordmark">Privacy<span>Watch</span></span>
     </a>
     <div class="header-meta">
-      <a href="https://github.com/WyrdWerk/PrivacyWatch" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://github.com/thelaggingway/PrivacyWatch" target="_blank" rel="noopener">GitHub ↗</a>
       <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch theme">
         <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 14.3A9 9 0 1 1 9.7 3 7 7 0 0 0 21 14.3z"/></svg>
         <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -206,7 +206,7 @@
 
 <div class="docs">
   <h1>API</h1>
-  <p class="lede">Read-only JSON API over the PrivacyWatch dataset: 96 LLM provider surfaces with data privacy, retention, model-training, and zero-data-retention fields, each backed by verbatim evidence quotes. No API key, no account, no writes. The same reference is available as <a href="https://github.com/WyrdWerk/PrivacyWatch/blob/main/docs/API.md"><code>docs/API.md</code></a> in the repository.</p>
+  <p class="lede">Read-only JSON API over the PrivacyWatch dataset: 96 LLM provider surfaces with data privacy, retention, model-training, and zero-data-retention fields, each backed by verbatim evidence quotes. No API key, no account, no writes. The same reference is available as <a href="https://github.com/thelaggingway/PrivacyWatch/blob/main/docs/API.md"><code>docs/API.md</code></a> in the repository.</p>
 
   <div class="card">
     <ul style="margin-bottom:0;">
@@ -408,21 +408,21 @@ curl "https://privacywatch.wyrdwerk.com/api/v1/meta"</code></pre>
     <span class="badge badge-high-risk">🔴 High Risk</span>
     <span class="badge badge-unverified">⚫ Unverified</span>
   </div>
-  <p><strong>Clean</strong>: training off by default, ZDR documented, clear policy. <strong>Guarded</strong>: generally safe with documented caveats. <strong>Caution</strong>: training on by default, vague retention, or docs that stay opaque after a live check. <strong>High Risk</strong>: training on with weak opt-out, China storage, confirmed breach or government bans. <strong>Unverified</strong>: the cited document never addresses API data at all. The 🚩 <code>incident</code> flag is additive on top of the base rating. Full definitions with caveats: <a href="https://github.com/WyrdWerk/PrivacyWatch#rating-system">README rating system</a>.</p>
+  <p><strong>Clean</strong>: training off by default, ZDR documented, clear policy. <strong>Guarded</strong>: generally safe with documented caveats. <strong>Caution</strong>: training on by default, vague retention, or docs that stay opaque after a live check. <strong>High Risk</strong>: training on with weak opt-out, China storage, confirmed breach or government bans. <strong>Unverified</strong>: the cited document never addresses API data at all. The 🚩 <code>incident</code> flag is additive on top of the base rating. Full definitions with caveats: <a href="https://github.com/thelaggingway/PrivacyWatch#rating-system">README rating system</a>.</p>
 
   <h2 id="versioning"><a class="anchor" href="#versioning">#</a>Versioning policy</h2>
   <ul>
     <li><strong>Fields may be added at any time.</strong> Treat unknown new fields in responses as normal.</li>
-    <li><strong>Removing or renaming a field, or changing what a value means, is announced in <a href="https://github.com/WyrdWerk/PrivacyWatch/blob/main/CHANGELOG.md">CHANGELOG.md</a> at least 30 days ahead, and the old field keeps working during that notice period.</strong></li>
+    <li><strong>Removing or renaming a field, or changing what a value means, is announced in <a href="https://github.com/thelaggingway/PrivacyWatch/blob/main/CHANGELOG.md">CHANGELOG.md</a> at least 30 days ahead, and the old field keeps working during that notice period.</strong></li>
     <li>Large or incompatible changes ship under <code>/api/v2</code> instead, leaving <code>/api/v1</code> working.</li>
   </ul>
   <p><code>meta.version</code> (also in every response's <code>meta</code>) is the dataset version; <code>/api/v1/meta</code>'s <code>lastUpdated</code> is the research date.</p>
 
   <h2 id="licence"><a class="anchor" href="#licence">#</a>Licence &amp; attribution</h2>
   <ul>
-    <li><strong>Data</strong> (<code>providers.json</code>, API responses, research notes): <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> — credit <strong>&ldquo;PrivacyWatch by WyrdWerk — https://privacywatch.wyrdwerk.com&rdquo;</strong>. See <a href="https://github.com/WyrdWerk/PrivacyWatch/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>.</li>
+    <li><strong>Data</strong> (<code>providers.json</code>, API responses, research notes): <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> — credit <strong>&ldquo;PrivacyWatch by WyrdWerk — https://privacywatch.wyrdwerk.com&rdquo;</strong>. See <a href="https://github.com/thelaggingway/PrivacyWatch/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>.</li>
     <li><strong>Quoted policy text and logos</strong> belong to their respective owners and are excluded from the data licence.</li>
-    <li><strong>Code</strong> (including the API functions): <a href="https://github.com/WyrdWerk/PrivacyWatch/blob/main/LICENSE">MIT</a>.</li>
+    <li><strong>Code</strong> (including the API functions): <a href="https://github.com/thelaggingway/PrivacyWatch/blob/main/LICENSE">MIT</a>.</li>
   </ul>
   <p class="note"><strong>Not legal advice.</strong> This is a good-faith summary of public policy documents. Policies change — verify with primary sources (each row's <code>evidence[]</code> links them) before making compliance decisions.</p>
 </div>
@@ -432,7 +432,7 @@ curl "https://privacywatch.wyrdwerk.com/api/v1/meta"</code></pre>
   <div class="footer-inner">
     <div class="footer-left">
       Maintained by <a href="https://wyrdwerk.com" target="_blank" rel="noopener">WyrdWerk</a> ·
-      <a href="https://github.com/WyrdWerk/PrivacyWatch" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://github.com/thelaggingway/PrivacyWatch" target="_blank" rel="noopener">GitHub</a> ·
       <a href="/">Tracker</a> ·
       Not legal advice · Policies change — always verify with primary sources
     </div>

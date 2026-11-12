@@ -10,7 +10,7 @@
     },
     "contact": {
       "name": "WyrdWerk",
-      "url": "https://github.com/WyrdWerk/PrivacyWatch"
+      "url": "https://github.com/thelaggingway/PrivacyWatch"
     }
   },
   "servers": [
@@ -437,7 +437,7 @@
       },
       "Provider": {
         "type": "object",
-        "description": "Full row; see https://github.com/WyrdWerk/PrivacyWatch/blob/main/providers.schema.json",
+        "description": "Full row; see https://github.com/thelaggingway/PrivacyWatch/blob/main/providers.schema.json",
         "additionalProperties": true
       }
     },
