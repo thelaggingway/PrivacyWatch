@@ -45,7 +45,7 @@ Vocabularies are defined in [`scripts/lib/v2-fields.mjs`](./scripts/lib/v2-field
 
 Public dataset: [`providers.json`](./providers.json) · Schema: [`providers.schema.json`](./providers.schema.json) · API: [`/api/v1`](#api) · Licence: CC BY 4.0
 
-**Data sources:** Primary research from provider privacy policies, ToS, DPAs, and API docs — every structured value carries a verbatim evidence quote with its source URL and retrieval date. Cross-referenced with [OpenRouter](https://openrouter.ai)'s curated ToS index. A Cloudflare Worker watches every `sourceUrl` 3× a day and reports detected changes to [issue #2](https://github.com/WyrdWerk/PrivacyWatch/issues/2) (see [Contributing data updates](#contributing-data-updates)). Brand marks are local PNGs in `assets/logos/`, refreshed from [Logo.dev](https://www.logo.dev/docs/logo-images/introduction) via `npm run logos` (publishable key, never shipped to the browser).
+**Data sources:** Primary research from provider privacy policies, ToS, DPAs, and API docs — every structured value carries a verbatim evidence quote with its source URL and retrieval date. Cross-referenced with [OpenRouter](https://openrouter.ai)'s curated ToS index. A Cloudflare Worker watches every `sourceUrl` 3× a day and reports detected changes to [issue #2](https://github.com/thelaggingway/PrivacyWatch/issues/2) (see [Contributing data updates](#contributing-data-updates)). Brand marks are local PNGs in `assets/logos/`, refreshed from [Logo.dev](https://www.logo.dev/docs/logo-images/introduction) via `npm run logos` (publishable key, never shipped to the browser).
 
 ---
 
@@ -110,7 +110,7 @@ Provider data lives in [`providers.json`](./providers.json). Each row carries hu
 6. **Run the checks**: `node --test tests/*.test.mjs`, `npm run validate` (prints structured-field coverage), `npm run build` — all must pass.
 7. **Open a PR** that references the watcher report it processes: "Processes #2 up to comment `<id>`".
 
-**Watcher / issue #2:** the watcher Worker checks every policy URL 3× a day and posts detected changes as comments on [issue #2](https://github.com/WyrdWerk/PrivacyWatch/issues/2), which it reopens. Maintainers close #2 once a research cycle has processed every comment — a closed issue means nothing is pending.
+**Watcher / issue #2:** the watcher Worker checks every policy URL 3× a day and posts detected changes as comments on [issue #2](https://github.com/thelaggingway/PrivacyWatch/issues/2), which it reopens. Maintainers close #2 once a research cycle has processed every comment — a closed issue means nothing is pending.
 
 Each row links to its official `sourceUrl` on the live dashboard.
 
