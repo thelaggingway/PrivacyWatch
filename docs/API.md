@@ -102,7 +102,7 @@ Dataset version, licence, counts by rating and category, the exact filter vocabu
 {
   "version": "1.13.0",
   "lastUpdated": "2026-09-30",
-  "count": 96,
+  "count": 97,
   "license": "CC-BY-4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "attribution": "PrivacyWatch by WyrdWerk (https://privacywatch.wyrdwerk.com)",
