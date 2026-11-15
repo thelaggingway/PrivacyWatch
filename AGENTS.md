@@ -6,7 +6,7 @@ Specifically within Amp environments, reusable global skills may be available un
 
 ## What this repo is
 
-PrivacyWatch tracks data privacy, retention, and model-training practices for 96 LLM provider surfaces (85 families): a static Cloudflare Pages site (`index.html`, vanilla JS/CSS) plus a public read-only JSON API at `/api/v1` (Pages Functions under `functions/`). Data licence CC BY 4.0 (`LICENSE-DATA.md`), code MIT (`LICENSE`).
+PrivacyWatch tracks data privacy, retention, and model-training practices for 97 LLM provider surfaces (86 families): a static Cloudflare Pages site (`index.html`, vanilla JS/CSS) plus a public read-only JSON API at `/api/v1` (Pages Functions under `functions/`). Data licence CC BY 4.0 (`LICENSE-DATA.md`), code MIT (`LICENSE`).
 
 ## Key files
 

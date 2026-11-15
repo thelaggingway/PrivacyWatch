@@ -128,3 +128,9 @@ Since v1.7.0 every `providers.json` row carries per-field `evidence[]` (source U
 | **Nex AGI** | API | Inference | [https://api.nex-agi.cn/privacy-policy](https://api.nex-agi.cn/privacy-policy) | [nex-agi--2026-09-13.md](./nex-agi--2026-09-13.md) |
 | **ModelRun (Modular)** | API | Inference | [https://www.modular.com/legal/terms](https://www.modular.com/legal/terms) | [modelrun-modular--2026-09-13.md](./modelrun-modular--2026-09-13.md) |
 | **Morph** | API | Inference | [https://www.morphllm.com/privacy/tos](https://www.morphllm.com/privacy/tos) | [morph--2026-09-13.md](./morph--2026-09-13.md) |
+
+> **Research note (2026-11-15):** source-verified note added with the v1.15.0 Inco row.
+
+| Provider | Surface | Category | Primary Source | Research Note |
+| --- | --- | --- | --- | --- |
+| **Inco** | API | Inference | [Terms of Service](https://inco.ai/legal/terms/) | [inco-api--2026-11-15.md](./inco-api--2026-11-15.md) |

@@ -1,6 +1,6 @@
 # PrivacyWatch API
 
-Read-only JSON API over the PrivacyWatch dataset: 96 LLM provider surfaces with data privacy, retention, model-training, and zero-data-retention fields, each backed by verbatim evidence quotes. No API key, no account, no writes.
+Read-only JSON API over the PrivacyWatch dataset: 97 LLM provider surfaces with data privacy, retention, model-training, and zero-data-retention fields, each backed by verbatim evidence quotes. No API key, no account, no writes.
 
 - **Base URL:** `https://privacywatch.wyrdwerk.com`
 - **CORS:** `Access-Control-Allow-Origin: *` on all API responses
@@ -28,7 +28,7 @@ Every response is JSON. List endpoints wrap rows in `{ "meta": { version, lastUp
 
 ### `GET /api/v1/providers`
 
-Summary rows for all 96 provider surfaces, filtered in memory. Use this for comparisons, dashboards, and "show me providers that…" queries.
+Summary rows for all 97 provider surfaces, filtered in memory. Use this for comparisons, dashboards, and "show me providers that…" queries.
 
 **Parameters:** see the [filters table](#filters) below. All are optional.
 
@@ -146,7 +146,7 @@ Semantic search over the archived policy corpus (privacy policies, ToS, DPAs beh
 
 ### `GET /providers.json`
 
-The full raw dataset — `meta` plus all 96 complete provider rows. Same data the API reads, served as a static file. Use it for bulk processing or offline analysis; use the API for filtered/point queries. CORS-enabled, cached for an hour.
+The full raw dataset — `meta` plus all 97 complete provider rows. Same data the API reads, served as a static file. Use it for bulk processing or offline analysis; use the API for filtered/point queries. CORS-enabled, cached for an hour.
 
 ## Filters
 

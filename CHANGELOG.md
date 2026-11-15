@@ -3,6 +3,12 @@
 All policy changes, new providers, and corrections are logged here.
 Format: `[YYYY-MM-DD] Provider — what changed — source`
 
+## v1.15.0 — 2026-11-15
+
+**New row: Inco (API)** — rated **Caution**, added from its [Terms of Service](https://inco.ai/legal/terms/) (effective 2026-10-15), [privacy policy](https://inco.ai/legal/privacy/) and [DPA](https://inco.ai/legal/dpa/). Training is off by default for every account and needs an opt-in setting, but the "Store & Improve" setting is on by default outside European accounts, so content logs are retained and used for routing, caching, benchmarking and internal serving models. Retention is unbounded for non-European accounts ("as long as necessary for the Improvement Purposes", reviewed yearly) and 30 days for European accounts; turning the setting off stops body retention beyond the request, so ZDR is self-serve but not the default. Under the default-on Passthrough setting, three of the ten catalog ids (the standard-tier GLM 5.3, GLM 5.3 Flash and DeepSeek V4.1 Flash) are relayed to Z.ai (Singapore) and DeepSeek (PRC). Inco's own inference runs in undisclosed North America/Europe/Asia-Pacific regions and never in the PRC, Taiwan or Hong Kong; HQ is Palo Alto, California; a public DPA with SCCs exists; SOC 2 and a BAA are not published. No public status page. Caution comes from the unbounded non-EU retention and the default-on relay path, not from training, which keeps the row out of High Risk. Research note archived at [policies/inco-api--2026-11-15.md](./policies/inco-api--2026-11-15.md). 96 → 97 surfaces across 85 → 86 families.
+
+---
+
 ## v1.14.0 — 2026-09-30
 
 **Provider brief pages.** Every row now has its own page at `/p/<id>` (e.g. [/p/deepseek-api](https://privacywatch.wyrdwerk.com/p/deepseek-api)), generated at build: a plain-English "At a glance" box from the structured fields, training / retention / ZDR / location details, compliance, incidents, and every evidence quote with its source link and retrieval date, plus links to the row's JSON in the API. The tracker's expanded rows link to them ("Full brief →"). `sitemap.xml` is now generated at build and lists the tracker, `/api-docs` and all 96 briefs.
