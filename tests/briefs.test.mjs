@@ -137,7 +137,7 @@ test('incident background renders inside the Incidents section', () => {
 test('sitemap lists the tracker root, /api-docs and every brief page', () => {
   const xml = renderSitemap(rows, meta);
   const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  assert.equal(locs.length, 98);
+  assert.equal(locs.length, 99);
   assert.ok(locs.includes(`${SITE}/api-docs`));
   assert.equal(locs.length, 2 + rows.length);
   assert.equal(locs[0], `${SITE}/`);
