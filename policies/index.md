@@ -134,3 +134,9 @@ Since v1.7.0 every `providers.json` row carries per-field `evidence[]` (source U
 | Provider | Surface | Category | Primary Source | Research Note |
 | --- | --- | --- | --- | --- |
 | **Inco** | API | Inference | [Terms of Service](https://inco.ai/legal/terms/) | [inco-api--2026-11-15.md](./inco-api--2026-11-15.md) |
+
+> **Research note (2026-11-18):** source-verified note added with the v1.16.0 JarvisLabs row.
+
+| Provider | Surface | Category | Primary Source | Research Note |
+| --- | --- | --- | --- | --- |
+| **JarvisLabs** | API | Inference | [Terms of Service](https://jarvislabs.ai/termsandservice) (its privacy-policy section; no standalone policy exists) | [jarvislabs-api--2026-11-18.md](./jarvislabs-api--2026-11-18.md) |
