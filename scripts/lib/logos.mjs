@@ -17,6 +17,7 @@ export const PROVIDER_LOGOS = {
   'Together AI': { slug: 'together', domains: ['together.ai'], names: ['Together AI'] },
   'DeepInfra': { slug: 'deepinfra', domains: ['deepinfra.com'], names: ['DeepInfra'] },
   'Inco': { slug: 'inco', domains: ['inco.ai'], names: ['Inco AI', 'Inco'] },
+  'JarvisLabs': { slug: 'jarvislabs', domains: ['jarvislabs.ai'], names: ['Jarvislabs', 'JarvisLabs'] },
   'Nebius AI': { slug: 'nebius', domains: ['nebius.com'], names: ['Nebius'] },
   'SiliconFlow': { slug: 'siliconflow', domains: ['siliconflow.com', 'siliconflow.cn'], names: ['SiliconFlow'] },
   'Cursor': { slug: 'cursor', domains: ['cursor.com'], names: ['Cursor'] },

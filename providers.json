@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-15",
-    "version": "1.15.0",
+    "lastUpdated": "2026-11-18",
+    "version": "1.16.0",
     "description": "PrivacyWatch — LLM data privacy, retention, and model training tracker",
     "maintainer": "WyrdWerk (github.com/thelaggingway/PrivacyWatch)",
     "license": "CC-BY-4.0",
@@ -8305,6 +8305,98 @@
           "url": "https://inco.ai/legal/dpa/",
           "quote": "Inco will make available to you the information reasonably necessary to demonstrate compliance with this DPA, including its then-current security documentation and, where available, any third-party audit report or certification.",
           "retrieved": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "id": "jarvislabs-api",
+      "name": "JarvisLabs",
+      "surface": "API",
+      "surfaceType": "api",
+      "category": "inference",
+      "categoryLabel": "Inference",
+      "rating": "guarded",
+      "incident": false,
+      "training": {
+        "label": "Off — stated for Token Factory",
+        "detail": "The Token Factory page and its FAQ state \"We don’t store your prompts or completions, and we don’t train on them.\" No legal document repeats that promise: the Terms of Service never address inference inputs or outputs, so it is product documentation rather than a contractual commitment.",
+        "default": "off",
+        "optOut": "not-needed"
+      },
+      "retention": {
+        "label": "Not stored (product page)",
+        "detail": "Token Factory says it keeps no copy of a request — \"We serve each request on our own GPUs and keep no copy of it\" — and that cached input is automatic with no cache-write fee. The Terms of Service set no inference-content retention period and reserve the right to retain \"all information provided for as long as the information is needed\", which covers the account and billing data described in its privacy section.",
+        "kind": "transient"
+      },
+      "zdr": {
+        "label": "Yes — stated for Token Factory",
+        "detail": "\"Prompts aren’t stored: We don’t store your prompts or completions\" and \"We serve each request on our own GPUs and keep no copy of it\" describe zero retention for API content with nothing to configure. The claim is published on the product page and FAQ, not in the binding Terms of Service, which are silent on inference content.",
+        "status": "full",
+        "access": "default"
+      },
+      "location": {
+        "label": "India (New Delhi)",
+        "flag": "🇮🇳",
+        "detail": "Jarvislabs' corporate office is Uppal's Genesis A-32, Block B, Mohan Cooperative Industrial Estate, Badarpur, New Delhi 110044, and its registered office is the Awfis suite at A-24/9 on Mathura Road in the same estate. Token Factory inference runs \"on Jarvislabs GPUs in our India region\", and the Terms of Service seat arbitration in New Delhi.",
+        "regions": [
+          "IN"
+        ]
+      },
+      "sourceUrl": "https://jarvislabs.ai/termsandservice",
+      "privacyUrl": "https://jarvislabs.ai/termsandservice",
+      "relatedUrls": [
+        "https://jarvislabs.ai/products/token-factory",
+        "https://jarvislabs.ai/contactus"
+      ],
+      "sourceDate": "2026-11-18",
+      "notes": "Policies reviewed 2026-11-18. Jarvislabs publishes one legal page: the Terms of Service at https://jarvislabs.ai/termsandservice (undated, undated revisions), whose \"Privacy Policy, Information Collection, Storage and Use Policy\" section is its only privacy policy — no separate one exists (/privacy, /privacypolicy and /policies/* all 404 and the sitemap lists only /termsandservice), so both URLs point there rather than at a page that is not published. Token Factory (the OpenAI-compatible API at models.jarvislabs.net/v1) states it does not store prompts or completions and does not train on them, and that inference runs on Jarvislabs GPUs in its India region; the Terms are silent on inference content and reserve indefinite retention of \"all information provided\", so the no-storage claim is product documentation, not a contractual term. No DPA is published, no SOC 2 or BAA is claimed, and there is no status page (status.jarvislabs.ai does not resolve; jarvislabs.statuspage.io is Atlassian's own generic page). Rated Guarded: zero retention and no training are explicitly stated for the API, but the only binding document is silent on inference content and reserves indefinite retention, and no compliance artefacts are published.",
+      "compliance": {
+        "dpa": "silent",
+        "soc2": "silent",
+        "hipaaBaa": "silent"
+      },
+      "incidents": [],
+      "evidence": [
+        {
+          "field": "training",
+          "url": "https://jarvislabs.ai/products/token-factory",
+          "quote": "Do you store my prompts or train on them? No. We don’t store your prompts or completions, and we don’t train on them.",
+          "retrieved": "2026-11-18"
+        },
+        {
+          "field": "retention",
+          "url": "https://jarvislabs.ai/products/token-factory",
+          "quote": "We serve each request on our own GPUs and keep no copy of it, and usage bills per token from the credit balance you already have.",
+          "retrieved": "2026-11-18"
+        },
+        {
+          "field": "retention",
+          "url": "https://jarvislabs.ai/termsandservice",
+          "quote": "We reserve the right to retain all information provided for as long as the information is needed.",
+          "retrieved": "2026-11-18"
+        },
+        {
+          "field": "zdr",
+          "url": "https://jarvislabs.ai/products/token-factory",
+          "quote": "We don’t store your prompts or completions, and we don’t train on them.",
+          "retrieved": "2026-11-18"
+        },
+        {
+          "field": "location",
+          "url": "https://jarvislabs.ai/products/token-factory",
+          "quote": "On Jarvislabs GPUs in our India region.",
+          "retrieved": "2026-11-18"
+        },
+        {
+          "field": "location",
+          "url": "https://jarvislabs.ai/contactus",
+          "quote": "Uppal's Genesis A-32, Block B, Mohan Cooperative Industrial Estate, Badarpur, New Delhi 110044, India",
+          "retrieved": "2026-11-18"
+        },
+        {
+          "field": "compliance",
+          "url": "https://jarvislabs.ai/termsandservice",
+          "retrieved": "2026-11-18"
         }
       ]
     },

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PrivacyWatch — API Documentation</title>
-  <meta name="description" content="PrivacyWatch read-only JSON API: filter 97 LLM provider surfaces by training, retention, ZDR, region and more. No key required." />
+  <meta name="description" content="PrivacyWatch read-only JSON API: filter 98 LLM provider surfaces by training, retention, ZDR, region and more. No key required." />
   <link rel="canonical" href="https://privacywatch.wyrdwerk.com/api-docs" />
   <meta name="theme-color" content="#F8F5F0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -206,7 +206,7 @@
 
 <div class="docs">
   <h1>API</h1>
-  <p class="lede">Read-only JSON API over the PrivacyWatch dataset: 97 LLM provider surfaces with data privacy, retention, model-training, and zero-data-retention fields, each backed by verbatim evidence quotes. No API key, no account, no writes. The same reference is available as <a href="https://github.com/thelaggingway/PrivacyWatch/blob/main/docs/API.md"><code>docs/API.md</code></a> in the repository.</p>
+  <p class="lede">Read-only JSON API over the PrivacyWatch dataset: 98 LLM provider surfaces with data privacy, retention, model-training, and zero-data-retention fields, each backed by verbatim evidence quotes. No API key, no account, no writes. The same reference is available as <a href="https://github.com/thelaggingway/PrivacyWatch/blob/main/docs/API.md"><code>docs/API.md</code></a> in the repository.</p>
 
   <div class="card">
     <ul style="margin-bottom:0;">
@@ -232,7 +232,7 @@ curl "https://privacywatch.wyrdwerk.com/api/v1/meta"</code></pre>
   <h2 id="endpoints"><a class="anchor" href="#endpoints">#</a>Endpoints</h2>
 
   <h3><code>GET /api/v1/providers</code></h3>
-  <p>Summary rows for all 97 provider surfaces, filtered in memory. Use this for comparisons, dashboards, and &ldquo;show me providers that&hellip;&rdquo; queries. Parameters are listed in the <a href="#filters">filters table</a>; all are optional. Add <code>fields=full</code> for complete rows (same shape as <code>/api/v1/providers/{id}</code>) or <code>ids=a,b,c</code> to compare a few providers side by side.</p>
+  <p>Summary rows for all 98 provider surfaces, filtered in memory. Use this for comparisons, dashboards, and &ldquo;show me providers that&hellip;&rdquo; queries. Parameters are listed in the <a href="#filters">filters table</a>; all are optional. Add <code>fields=full</code> for complete rows (same shape as <code>/api/v1/providers/{id}</code>) or <code>ids=a,b,c</code> to compare a few providers side by side.</p>
   <p>Example response (<code>?training=off&amp;zdr=default&amp;rating=clean</code>, trimmed to 1 of 14 matches):</p>
 <pre><code>{
   "meta": { "version": "1.13.0", "lastUpdated": "2026-09-30", "count": 14, "license": "CC-BY-4.0" },
@@ -332,7 +332,7 @@ curl "https://privacywatch.wyrdwerk.com/api/v1/meta"</code></pre>
   </ul>
 
   <h3><code>GET /providers.json</code></h3>
-  <p>The full raw dataset — <code>meta</code> plus all 97 complete provider rows. Same data the API reads, served as a static file. Use it for bulk processing or offline analysis; use the API for filtered/point queries. CORS-enabled, cached for an hour.</p>
+  <p>The full raw dataset — <code>meta</code> plus all 98 complete provider rows. Same data the API reads, served as a static file. Use it for bulk processing or offline analysis; use the API for filtered/point queries. CORS-enabled, cached for an hour.</p>
 
   <h2 id="filters"><a class="anchor" href="#filters">#</a>Filters</h2>
   <p>All filters are optional and combine with <strong>AND</strong>. Within one filter, comma-separated values or repeated parameters mean <strong>OR</strong>. The vocabularies come from <code>scripts/lib/v2-fields.mjs</code>; <code>/api/v1/meta</code> returns the same lists at runtime.</p>
